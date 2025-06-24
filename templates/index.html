@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Approval Predictor</title>
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 48px;
+            text-shadow: 0 0 10px #0ff;
+        }
+        .btn {
+            color: #0ff;
+            font-size: 24px;
+            padding: 12px 24px;
+            background: transparent;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #0ff;
+            color: #000;
+            box-shadow: 0 0 20px #0ff;
+        }
+        .bg-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background: url('https://img.plasbit.com/blog/Virtual+Bitcoin+Card.jpg') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <h1>Loan Approval Prediction</h1>
+    <a href="/predict" class="btn">Start Prediction</a>
+    <a href="/logout" class="btn">Logout</a>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout Panel</title>
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+        }
+        h1 {
+            text-shadow: 0 0 10px #0ff;
+        }
+        .card {
+            background: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px #0ff;
+            width: 300px;
+            text-align: center;
+        }
+        a {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a:hover {
+            box-shadow: 0 0 10px #0ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="card">
+        <p>You are logged in as Admin.</p>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>

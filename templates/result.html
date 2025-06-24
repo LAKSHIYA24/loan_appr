@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <script>
+        window.onload = function () {
+            const result = localStorage.getItem("loan_result");
+            document.getElementById("loan-status").textContent = result || "No Result";
+        };
+    </script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 0 0 20px #0ff;
+            z-index: 1;
+        }
+        p {
+            font-size: 24px;
+            text-shadow: 0 0 10px #0ff;
+            z-index: 1;
+        }
+        a {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 1;
+        }
+        a:hover {
+            box-shadow: 0 0 10px #0ff;
+        }
+        .bg-img {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: url('https://www.fastcapital360.com/wp-content/uploads/2021/12/graphic_01-2.gif') no-repeat center center/cover;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-img"></div>
+    <h1>Prediction Result</h1>
+    <p>Loan is: <strong id="loan-status">Loading...</strong></p>
+    <a href="/">Go Back</a>
+</body>
+</html>
